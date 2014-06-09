@@ -34,7 +34,7 @@ angular.module('ngSocket', []).factory('$socket', ['$rootScope', function ($root
         callback = arguments[1];
       }
 
-      socket.addListener(name, angularCallback(callback));
+      socket.on(name, angularCallback(callback));
 
       if (scope !== null) {
         scope.$on('$destroy', function () {

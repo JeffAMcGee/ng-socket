@@ -5,7 +5,7 @@ Angular Module for Socket.io
 ## Requirements
 
  - AngularJS 1.0.5+
- - Socket.IO 0.9.16
+ - Socket.IO 1.0.4
 
 ## Installing
 
