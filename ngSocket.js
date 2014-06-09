@@ -30,8 +30,8 @@ angular.module('ngSocket', []).factory('$socket', ['$rootScope', function ($root
 
     var addListener = function (name, scope, callback) {
       if (arguments.length === 2) {
-        scope = null;
         callback = arguments[1];
+        scope = null;
       }
 
       socket.on(name, angularCallback(callback));
